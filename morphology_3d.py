@@ -11,7 +11,6 @@ class morphology_3d():
                 out[i][j] = self.erode_point(img,selem,i,j,thresh=thresh)
         return out
     def erode_point(self,img,selem,r,c,thresh):
-        print(r)
         l1=len(selem)//2
         l2=len(selem[0])//2
         l3=len(selem[0][0])//2
@@ -37,7 +36,6 @@ class morphology_3d():
         img=out.copy()
         return out
     def dilate_point(self,img,selem,r,c,thresh):
-        print(r)
         l1=len(selem)//2
         l2=len(selem[0])//2
         l3=len(selem[0][0])//2
